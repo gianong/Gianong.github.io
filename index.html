@@ -4,124 +4,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Gia Nông - Vật tư nông nghiệp</title>
+<title>Gia Nông - Thuốc BVTV & Phân bón</title>
 
 <style>
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f8f3;
-    color: #222;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7f5;
+  color: #222;
 }
 
 header {
-    background: #166534;
-    color: white;
-    padding: 22px 15px;
-    text-align: center;
+  background: #16823b;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 34px;
+  margin: 0;
+  font-size: 38px;
 }
 
 header p {
-    margin: 8px 0 0;
-    font-size: 17px;
-}
-
-.hero {
-    padding: 55px 20px;
-    text-align: center;
-    background: white;
-}
-
-.hero h2 {
-    color: #166534;
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-
-.hero p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 25px;
-    background: #f59e0b;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.section {
-    padding: 40px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.section h2 {
-    text-align: center;
-    color: #166534;
-    margin-bottom: 30px;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-}
-
-.product {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-}
-
-.product h3 {
-    color: #166534;
-}
-
-.product p {
-    line-height: 1.5;
+  margin: 8px 0 0;
+  font-size: 17px;
 }
 
 .contact {
-    background: #166534;
-    color: white;
-    text-align: center;
-    padding: 45px 20px;
+  background: white;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 2px 8px #ccc;
 }
 
-.contact h2 {
-    margin-top: 0;
+.contact div {
+  margin: 7px 0;
 }
 
 .contact a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
+  color: #16823b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+h2 {
+  text-align: center;
+  color: #16823b;
+  margin-bottom: 25px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 3px 12px #ddd;
+  transition: 0.2s;
+}
+
+.category:hover {
+  transform: translateY(-4px);
+}
+
+.category h3 {
+  color: #16823b;
+  font-size: 23px;
+}
+
+.category p {
+  color: #666;
 }
 
 footer {
-    background: #0f3d20;
-    color: white;
-    text-align: center;
-    padding: 18px;
-    font-size: 14px;
+  margin-top: 40px;
+  background: #146b32;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+@media (max-width: 700px) {
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
 }
 </style>
 </head>
@@ -129,73 +115,57 @@ footer {
 <body>
 
 <header>
-    <h1>🌱 GIA NÔNG</h1>
-    <p>Vật tư nông nghiệp - Đồng hành cùng nhà nông</p>
+  <h1>GIA NÔNG</h1>
+  <p>Thuốc bảo vệ thực vật & Phân bón</p>
 </header>
 
-<section class="hero">
-    <h2>Chào mừng đến với Gia Nông</h2>
-    <p>
-        Chuyên cung cấp vật tư nông nghiệp, phân bón,
-        thuốc bảo vệ thực vật và các sản phẩm phục vụ sản xuất nông nghiệp.
-    </p>
+<section class="contact">
+  <div>📞 Điện thoại:
+    <a href="tel:0889008009">0889.008.009</a>
+  </div>
 
-    <a class="button" href="#lienhe">LIÊN HỆ GIA NÔNG</a>
+  <div>📍 Địa chỉ:
+    163 Lạc Long Quân, Đức Trọng, Lâm Đồng
+  </div>
+
+  <div>✉️ Email:
+    <a href="mailto:xnkbvtvgianong@gmail.com">
+      xnkbvtvgianong@gmail.com
+    </a>
+  </div>
 </section>
 
-<section class="section">
-    <h2>Sản phẩm của Gia Nông</h2>
+<main class="container">
 
-    <div class="products">
+  <h2>DANH MỤC SẢN PHẨM</h2>
 
-        <div class="product">
-            <h3>🌱 Phân bón</h3>
-            <p>
-                Các loại phân bón phục vụ nhiều loại cây trồng,
-                giúp cây sinh trưởng và phát triển tốt.
-            </p>
-        </div>
+  <section class="categories">
 
-        <div class="product">
-            <h3>🧪 Thuốc BVTV</h3>
-            <p>
-                Sản phẩm bảo vệ cây trồng,
-                hỗ trợ phòng trừ sâu bệnh hiệu quả.
-            </p>
-        </div>
-
-        <div class="product">
-            <h3>🌾 Giống cây trồng</h3>
-            <p>
-                Các loại giống và sản phẩm phục vụ
-                sản xuất nông nghiệp.
-            </p>
-        </div>
-
-        <div class="product">
-            <h3>🚜 Vật tư nông nghiệp</h3>
-            <p>
-                Dụng cụ và vật tư cần thiết
-                cho sản xuất và chăm sóc cây trồng.
-            </p>
-        </div>
-
+    <div class="category">
+      <h3>🌿 Thuốc bệnh</h3>
+      <p>Sản phẩm phòng và trị các bệnh trên cây trồng.</p>
     </div>
-</section>
 
-<section class="contact" id="lienhe">
-    <h2>Liên hệ Gia Nông</h2>
+    <div class="category">
+      <h3>🐛 Thuốc sâu</h3>
+      <p>Sản phẩm phòng trừ sâu hại cây trồng.</p>
+    </div>
 
-    <p>📍 Địa chỉ: Đang cập nhật</p>
+    <div class="category">
+      <h3>🌱 Phân bón</h3>
+      <p>Các sản phẩm dinh dưỡng giúp cây trồng phát triển.</p>
+    </div>
 
-    <p>📞 Điện thoại:</p>
-    <a href="tel:0000000000">0000 000 000</a>
+  </section>
 
-    <p>📧 Email: Đang cập nhật</p>
-</section>
+</main>
 
 <footer>
-    © 2026 Gia Nông - Vật tư nông nghiệp
+  <strong>GIA NÔNG</strong>
+  <br>
+  163 Lạc Long Quân, Đức Trọng, Lâm Đồng
+  <br>
+  Hotline: 0889.008.009
 </footer>
 
 </body>
