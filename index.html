@@ -1,172 +1,461 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gia Nông - Thuốc BVTV & Phân bón</title>
-
+<title>CÔNG TY TNHH XNK BVTV GIA NÔNG</title>
 <style>
-* {
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f7f5;
-  color: #222;
+html{
+    scroll-behavior:smooth;
 }
-
-header {
-  background: #16823b;
-  color: white;
-  text-align: center;
-  padding: 28px 15px;
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:#222;
+    background:#f5f7f4;
+    line-height:1.6;
 }
-
-header h1 {
-  margin: 0;
-  font-size: 38px;
+/* HEADER */
+header{
+    background:#087a35;
+    color:white;
+    padding:16px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
 }
-
-header p {
-  margin: 8px 0 0;
-  font-size: 17px;
+.logo{
+    font-size:25px;
+    font-weight:bold;
 }
-
-.contact {
-  background: white;
-  padding: 18px;
-  text-align: center;
-  box-shadow: 0 2px 8px #ccc;
+.logo span{
+    color:#d7ef75;
 }
-
-.contact div {
-  margin: 7px 0;
+nav{
+    display:flex;
+    gap:22px;
 }
-
-.contact a {
-  color: #16823b;
-  text-decoration: none;
-  font-weight: bold;
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
 }
-
-.container {
-  max-width: 1100px;
-  margin: 30px auto;
-  padding: 0 15px;
+nav a:hover{
+    color:#d7ef75;
 }
-
-h2 {
-  text-align: center;
-  color: #16823b;
-  margin-bottom: 25px;
+/* HERO */
+.hero{
+    min-height:520px;
+    background:
+    linear-gradient(rgba(0,70,30,.58),rgba(0,70,30,.58)),
+    url("https://images.unsplash.com/photo-1492496913980-501348b61469?auto=format&fit=crop&w=1800&q=85");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:30px;
 }
-
-.categories {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+.hero-content{
+    max-width:950px;
 }
-
-.category {
-  background: white;
-  border-radius: 12px;
-  padding: 30px 20px;
-  text-align: center;
-  box-shadow: 0 3px 12px #ddd;
-  transition: 0.2s;
+.hero h1{
+    font-size:48px;
+    line-height:1.2;
+    margin-bottom:18px;
 }
-
-.category:hover {
-  transform: translateY(-4px);
+.hero h2{
+    font-size:25px;
+    font-weight:normal;
+    margin-bottom:15px;
 }
-
-.category h3 {
-  color: #16823b;
-  font-size: 23px;
+.hero p{
+    font-size:19px;
+    max-width:780px;
+    margin:auto;
 }
-
-.category p {
-  color: #666;
+.btn{
+    display:inline-block;
+    margin-top:28px;
+    background:#f3c400;
+    color:#222;
+    padding:13px 28px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
 }
-
-footer {
-  margin-top: 40px;
-  background: #146b32;
-  color: white;
-  text-align: center;
-  padding: 25px 15px;
+/* THÔNG TIN */
+.company-info{
+    background:white;
+    padding:22px 6%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 }
-
-@media (max-width: 700px) {
-  .categories {
-    grid-template-columns: 1fr;
-  }
-
-  header h1 {
-    font-size: 30px;
-  }
+.company-info div{
+    font-weight:bold;
+}
+/* SECTION */
+section{
+    padding:65px 7%;
+}
+.section-title{
+    text-align:center;
+    color:#087a35;
+    font-size:32px;
+    margin-bottom:12px;
+}
+.section-desc{
+    text-align:center;
+    max-width:800px;
+    margin:0 auto 35px;
+    color:#555;
+}
+/* GIỚI THIỆU */
+.about{
+    background:white;
+}
+.about-box{
+    max-width:1000px;
+    margin:auto;
+    font-size:17px;
+}
+/* LĨNH VỰC */
+.fields{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+.field{
+    background:white;
+    padding:32px 25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+.icon{
+    font-size:45px;
+    margin-bottom:12px;
+}
+.field h3{
+    color:#087a35;
+    font-size:22px;
+    margin-bottom:10px;
+}
+/* SẢN PHẨM */
+.products{
+    background:#edf5eb;
+}
+.product-list{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+.product{
+    background:white;
+    padding:28px;
+    border-radius:10px;
+    border-top:5px solid #087a35;
+}
+.product h3{
+    color:#087a35;
+    margin-bottom:10px;
+}
+/* ĐỊNH HƯỚNG */
+.mission{
+    background:white;
+}
+.mission-box{
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+/* LIÊN HỆ */
+.contact{
+    background:#087a35;
+    color:white;
+}
+.contact .section-title{
+    color:white;
+}
+.contact .section-desc{
+    color:white;
+}
+.contact-box{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+.contact-item{
+    text-align:center;
+    padding:20px;
+}
+.contact-item h3{
+    color:#d7ef75;
+    margin-bottom:8px;
+}
+/* FOOTER */
+footer{
+    background:#064d24;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+footer strong{
+    font-size:18px;
+}
+/* MOBILE */
+@media(max-width:800px){
+    header{
+        flex-direction:column;
+        padding:15px;
+    }
+    nav{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    nav a{
+        font-size:14px;
+    }
+    .hero{
+        min-height:480px;
+    }
+    .hero h1{
+        font-size:34px;
+    }
+    .hero h2{
+        font-size:20px;
+    }
+    .hero p{
+        font-size:17px;
+    }
+    .fields,
+    .product-list,
+    .contact-box{
+        grid-template-columns:1fr;
+    }
+    section{
+        padding:48px 5%;
+    }
+    .company-info{
+        flex-direction:column;
+        text-align:center;
+        gap:8px;
+    }
 }
 </style>
 </head>
-
 <body>
-
+<!-- ================= HEADER ================= -->
 <header>
-  <h1>GIA NÔNG</h1>
-  <p>Thuốc bảo vệ thực vật & Phân bón</p>
+    <div class="logo">
+        GIA <span>NÔNG</span>
+    </div>
+    <nav>
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#linh-vuc">Lĩnh vực</a>
+        <a href="#san-pham">Sản phẩm</a>
+        <a href="#lien-he">Liên hệ</a>
+    </nav>
 </header>
-
-<section class="contact">
-  <div>📞 Điện thoại:
-    <a href="tel:0889008009">0889.008.009</a>
-  </div>
-
-  <div>📍 Địa chỉ:
-    163 Lạc Long Quân, Đức Trọng, Lâm Đồng
-  </div>
-
-  <div>✉️ Email:
-    <a href="mailto:xnkbvtvgianong@gmail.com">
-      xnkbvtvgianong@gmail.com
-    </a>
-  </div>
+<!-- ================= ẢNH CHÍNH ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>
+            CÔNG TY TNHH XNK BVTV GIA NÔNG
+        </h1>
+        <h2>
+            ĐỒNG HÀNH CÙNG NHÀ NÔNG
+        </h2>
+        <p>
+            Cung cấp các sản phẩm và giải pháp phục vụ
+            sản xuất nông nghiệp, hướng đến hiệu quả
+            và phát triển bền vững.
+        </p>
+        <a href="#lien-he" class="btn">
+            LIÊN HỆ VỚI CHÚNG TÔI
+        </a>
+    </div>
 </section>
-
-<main class="container">
-
-  <h2>DANH MỤC SẢN PHẨM</h2>
-
-  <section class="categories">
-
-    <div class="category">
-      <h3>🌿 Thuốc bệnh</h3>
-      <p>Sản phẩm phòng và trị các bệnh trên cây trồng.</p>
+<!-- ================= THÔNG TIN CÔNG TY ================= -->
+<div class="company-info">
+    <div>
+        🏢 CÔNG TY TNHH XNK BVTV GIA NÔNG
     </div>
-
-    <div class="category">
-      <h3>🐛 Thuốc sâu</h3>
-      <p>Sản phẩm phòng trừ sâu hại cây trồng.</p>
+    <div>
+        📋 MST: 580158159
     </div>
-
-    <div class="category">
-      <h3>🌱 Phân bón</h3>
-      <p>Các sản phẩm dinh dưỡng giúp cây trồng phát triển.</p>
+    <div>
+        ✉️ xnkbvtvgianong@gmail.com
     </div>
-
-  </section>
-
-</main>
-
+</div>
+<!-- ================= GIỚI THIỆU ================= -->
+<section class="about" id="gioi-thieu">
+    <h2 class="section-title">
+        GIỚI THIỆU CÔNG TY
+    </h2>
+    <p class="section-desc">
+        Gia Nông hoạt động trong lĩnh vực phục vụ sản xuất nông nghiệp.
+    </p>
+    <div class="about-box">
+        <p>
+            <strong>CÔNG TY TNHH XNK BVTV GIA NÔNG</strong>
+            định hướng hoạt động trong lĩnh vực kinh doanh,
+            xuất nhập khẩu và cung cấp các sản phẩm phục vụ
+            sản xuất nông nghiệp.
+        </p>
+        <br>
+        <p>
+            Công ty tập trung vào các nhóm sản phẩm bảo vệ
+            thực vật và phân bón, hướng tới việc đáp ứng nhu
+            cầu ngày càng đa dạng của khách hàng và người
+            sản xuất nông nghiệp.
+        </p>
+        <br>
+        <p>
+            Gia Nông chú trọng xây dựng quan hệ hợp tác lâu
+            dài với khách hàng, đối tác và hệ thống phân phối,
+            lấy chất lượng sản phẩm và sự phục vụ làm nền tảng
+            phát triển.
+        </p>
+    </div>
+</section>
+<!-- ================= LĨNH VỰC ================= -->
+<section id="linh-vuc">
+    <h2 class="section-title">
+        LĨNH VỰC HOẠT ĐỘNG
+    </h2>
+    <p class="section-desc">
+        Các nhóm sản phẩm chính của Công ty Gia Nông.
+    </p>
+    <div class="fields">
+        <div class="field">
+            <div class="icon">🌿</div>
+            <h3>THUỐC BỆNH</h3>
+            <p>
+                Các sản phẩm bảo vệ thực vật phục vụ
+                công tác quản lý bệnh trên cây trồng.
+            </p>
+        </div>
+        <div class="field">
+            <div class="icon">🐛</div>
+            <h3>THUỐC SÂU</h3>
+            <p>
+                Các sản phẩm hỗ trợ quản lý sâu và
+                côn trùng gây hại trên cây trồng.
+            </p>
+        </div>
+        <div class="field">
+            <div class="icon">🌱</div>
+            <h3>PHÂN BÓN</h3>
+            <p>
+                Các sản phẩm dinh dưỡng phục vụ
+                quá trình sinh trưởng và phát triển cây trồng.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ================= SẢN PHẨM ================= -->
+<section class="products" id="san-pham">
+    <h2 class="section-title">
+        NHÓM SẢN PHẨM
+    </h2>
+    <p class="section-desc">
+        Gia Nông cung cấp các nhóm sản phẩm phục vụ sản xuất nông nghiệp.
+    </p>
+    <div class="product-list">
+        <div class="product">
+            <h3>THUỐC BẢO VỆ THỰC VẬT</h3>
+            <p>
+                Các sản phẩm phục vụ công tác quản lý
+                sâu bệnh trên nhiều nhóm cây trồng.
+            </p>
+        </div>
+        <div class="product">
+            <h3>THUỐC SÂU</h3>
+            <p>
+                Nhóm sản phẩm phục vụ quản lý sâu,
+                côn trùng gây hại trong sản xuất.
+            </p>
+        </div>
+        <div class="product">
+            <h3>PHÂN BÓN</h3>
+            <p>
+                Các sản phẩm cung cấp dinh dưỡng
+                phục vụ nhu cầu chăm sóc cây trồng.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ================= ĐỊNH HƯỚNG ================= -->
+<section class="mission">
+    <h2 class="section-title">
+        ĐỊNH HƯỚNG PHÁT TRIỂN
+    </h2>
+    <div class="mission-box">
+        <p>
+            Gia Nông hướng tới việc xây dựng một doanh nghiệp
+            nông nghiệp uy tín, chuyên nghiệp và phát triển
+            bền vững; đồng thời trở thành cầu nối hiệu quả
+            giữa sản phẩm, đối tác và người sản xuất.
+        </p>
+    </div>
+</section>
+<!-- ================= LIÊN HỆ ================= -->
+<section class="contact" id="lien-he">
+    <h2 class="section-title">
+        THÔNG TIN LIÊN HỆ
+    </h2>
+    <p class="section-desc">
+        CÔNG TY TNHH XNK BVTV GIA NÔNG
+    </p>
+    <div class="contact-box">
+        <div class="contact-item">
+            <h3>🏢 TÊN CÔNG TY</h3>
+            <p>
+                CÔNG TY TNHH XNK BVTV GIA NÔNG
+            </p>
+        </div>
+        <div class="contact-item">
+            <h3>📋 MÃ SỐ THUẾ</h3>
+            <p>
+                580158159
+            </p>
+        </div>
+        <div class="contact-item">
+            <h3>✉️ EMAIL</h3>
+            <p>
+                xnkbvtvgianong@gmail.com
+            </p>
+        </div>
+    </div>
+</section>
+<!-- ================= FOOTER ================= -->
 <footer>
-  <strong>GIA NÔNG</strong>
-  <br>
-  163 Lạc Long Quân, Đức Trọng, Lâm Đồng
-  <br>
-  Hotline: 0889.008.009
+    <strong>
+        CÔNG TY TNHH XNK BVTV GIA NÔNG
+    </strong>
+    <br>
+    MST: 580158159
+    <br><br>
+    © 2026 Gia Nông. All Rights Reserved.
 </footer>
-
 </body>
 </html>
