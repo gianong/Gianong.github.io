@@ -7,6 +7,8 @@
 
 <title>CÔNG TY TNHH XUẤT NHẬP KHẨU GIA NÔNG</title>
 
+<meta name="description" content="Gia Nông - Đồng hành cùng nhà nông – Kiến tạo mùa vàng">
+
 <style>
 *{
     margin:0;
@@ -20,239 +22,255 @@ html{
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    color:#173d29;
+    color:#173b2b;
     background:#fff;
-    line-height:1.5;
+    line-height:1.6;
 }
 
 a{
     text-decoration:none;
+    color:inherit;
 }
 
-/* ===== HEADER ===== */
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
 
-.top{
+/* ================= HEADER ================= */
+
+.top-header{
     background:#fff;
-    padding:12px 5%;
+    padding:18px 0;
+}
+
+.header-inner{
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:25px;
 }
 
-.logo-area{
+.brand{
     display:flex;
     align-items:center;
-    gap:15px;
+    gap:14px;
 }
 
 .logo{
-    width:75px;
-    height:75px;
-    border:4px solid #16833c;
+    width:82px;
+    height:82px;
+    border:4px solid #08733f;
     border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:38px;
-    background:#f4fff4;
+    flex-direction:column;
+    color:#08733f;
+    font-weight:bold;
+    flex-shrink:0;
 }
 
-.company-name h1{
-    color:#126b36;
-    font-size:25px;
-    line-height:1.1;
+.logo-leaf{
+    font-size:30px;
+    line-height:30px;
 }
 
-.company-name h2{
-    color:#16833c;
-    font-size:34px;
-    line-height:1.1;
+.logo-text{
+    font-size:11px;
+    margin-top:3px;
+}
+
+.brand-name{
+    color:#08733f;
+    font-size:24px;
+    font-weight:700;
+    line-height:1.15;
+}
+
+.brand-name strong{
+    display:block;
+    font-size:39px;
+    letter-spacing:1px;
 }
 
 .slogan{
     font-family:Georgia,serif;
     font-style:italic;
-    color:#555;
-    font-size:15px;
+    color:#315f48;
+    margin-top:4px;
 }
 
-.contact-top{
-    display:flex;
-    gap:25px;
-    align-items:center;
-    font-size:13px;
-}
-
-.contact-top strong{
-    color:#087437;
-}
-
-/* ===== MENU ===== */
-
-.menu{
-    background:#00652d;
+.header-contact{
     display:flex;
     align-items:center;
-    justify-content:center;
-}
-
-.menu a{
-    color:#fff;
-    padding:13px 28px;
-    font-weight:bold;
+    gap:22px;
+    color:#155c3e;
     font-size:14px;
 }
 
-.menu a:hover,
-.menu a.active{
-    background:#8bcf35;
-    border-radius:18px;
+.header-contact-item{
+    display:flex;
+    gap:8px;
+    align-items:flex-start;
 }
 
-/* ===== HERO ===== */
+.header-icon{
+    font-size:21px;
+}
 
-.hero{
-    min-height:520px;
-    background:
-    linear-gradient(90deg,rgba(0,70,25,.78),rgba(0,70,25,.15)),
-    url("https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1800&q=85");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:center;
-    padding:50px 6%;
+.header-contact strong{
+    display:block;
+    color:#064f34;
+}
+
+/* ================= NAV ================= */
+
+.navbar{
+    background:#056b3b;
     color:#fff;
 }
 
+.nav-inner{
+    min-height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+}
+
+.nav-inner a{
+    padding:10px 28px;
+    border-radius:25px;
+    font-weight:700;
+    transition:.2s;
+}
+
+.nav-inner a:hover,
+.nav-inner a.active{
+    background:#35c85a;
+}
+
+.search-icon{
+    margin-left:20px;
+    font-size:21px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:510px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0,65,35,.30),
+            rgba(255,255,255,.05),
+            rgba(0,70,40,.20)
+        ),
+        url("https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=2000&q=90");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.04);
+}
+
 .hero-content{
-    max-width:620px;
+    position:relative;
+    z-index:2;
+    width:100%;
+    text-align:center;
+    padding:65px 20px;
+    color:#075b36;
 }
 
-.hero-small{
+.hero-script{
     font-family:Georgia,serif;
+    font-size:43px;
     font-style:italic;
-    font-size:29px;
-    margin-bottom:5px;
+    color:#08733f;
 }
 
-.hero h1{
-    font-size:30px;
-    margin-bottom:0;
-}
-
-.hero h2{
-    font-size:65px;
-    line-height:1;
-    margin-bottom:18px;
-    text-shadow:2px 3px 4px #234;
-}
-
-.hero p{
-    font-size:19px;
+.hero-company{
+    font-size:25px;
     font-weight:bold;
-    max-width:570px;
+    margin-top:10px;
+}
+
+.hero-title{
+    font-size:70px;
+    line-height:1;
+    letter-spacing:2px;
+    color:#064d30;
+    margin-top:3px;
+}
+
+.hero-description{
+    max-width:650px;
+    margin:18px auto;
+    font-size:18px;
+    font-weight:600;
 }
 
 .hero-buttons{
     display:flex;
-    gap:18px;
-    margin-top:28px;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
     flex-wrap:wrap;
+    margin-top:22px;
 }
 
 .btn{
-    padding:14px 25px;
+    display:inline-block;
+    padding:13px 27px;
     border-radius:30px;
     font-weight:bold;
-    display:inline-block;
+    border:2px solid #08733f;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
 }
 
 .btn-yellow{
     background:#ffe000;
-    color:#064e28;
+    border-color:#ffe000;
+    color:#064d30;
 }
 
 .btn-white{
-    background:white;
-    color:#064e28;
-}
-
-/* ===== GIỚI THIỆU ===== */
-
-.about{
-    padding:55px 6%;
     background:#fff;
+    color:#075b38;
 }
 
-.about-box{
-    max-width:1150px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:42% 58%;
-    align-items:center;
-    gap:45px;
-}
-
-.about-img{
-    height:310px;
-    border-radius:15px;
-    background:
-    url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1000&q=85");
-    background-size:cover;
-    background-position:center;
-    box-shadow:0 5px 18px #ccc;
-}
-
-.label{
-    color:#087437;
-    font-weight:bold;
-    font-size:17px;
-    margin-bottom:8px;
-}
-
-.about h2{
-    color:#087437;
-    font-size:30px;
-    margin-bottom:15px;
-}
-
-.about h3{
-    color:#087437;
-    font-size:25px;
-    margin-bottom:12px;
-}
-
-.about p{
-    color:#405449;
-    font-size:16px;
-}
-
-.more{
-    display:inline-block;
-    margin-top:20px;
-    background:#07823b;
-    color:white;
-    padding:11px 22px;
-    border-radius:25px;
-    font-weight:bold;
-}
-
-/* ===== 4 GIÁ TRỊ ===== */
+/* ================= VALUES ================= */
 
 .values{
-    margin:0 4%;
-    background:#f0f9ed;
-    border-radius:15px;
-    padding:25px 15px;
+    background:#f1f9ee;
+    padding:28px 20px;
+}
+
+.values-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
 }
 
 .value{
     text-align:center;
-    padding:10px 20px;
-    border-right:1px solid #a9c8ae;
+    padding:12px 20px;
+    border-right:1px solid #5bb58a;
 }
 
 .value:last-child{
@@ -260,228 +278,301 @@ a{
 }
 
 .value-icon{
-    font-size:40px;
-    margin-bottom:5px;
+    width:62px;
+    height:62px;
+    margin:0 auto 10px;
+    border-radius:50%;
+    background:#07924e;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
 }
 
 .value h3{
-    color:#087437;
-    margin-bottom:7px;
+    color:#075b38;
+    font-size:20px;
 }
 
 .value p{
-    color:#506056;
     font-size:14px;
+    margin-top:5px;
 }
 
-/* ===== HÌNH ẢNH ===== */
+/* ================= GENERAL SECTION ================= */
 
-.gallery{
-    padding:60px 5%;
+.section{
+    padding:60px 0;
 }
 
-.gallery-box{
-    max-width:1150px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:28% 44% 28%;
-    gap:10px;
-    align-items:center;
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
 }
 
-.gallery-text{
-    padding:20px;
+.section-title small{
+    display:block;
+    color:#078044;
+    font-weight:bold;
+    text-transform:uppercase;
 }
 
-.gallery-text h2{
-    color:#087437;
+.section-title h2{
+    color:#075b38;
     font-size:35px;
 }
 
-.gallery-text h3{
-    color:#16833c;
-    font-size:25px;
+/* ================= ABOUT ================= */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.about-image{
+    height:370px;
+    border-radius:12px;
+    background-image:
+        url("https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1200&q=90");
+    background-size:cover;
+    background-position:center;
+}
+
+.about-content{
+    padding:5px;
+}
+
+.about-label{
+    color:#078044;
+    font-weight:bold;
+}
+
+.about-content h2{
+    font-size:31px;
+    color:#08603b;
+    line-height:1.25;
+    margin:8px 0 15px;
+}
+
+.about-content p{
+    color:#385247;
+    margin-bottom:13px;
+}
+
+.green-button{
+    display:inline-block;
+    background:#07924e;
+    color:white;
+    padding:12px 25px;
+    border-radius:25px;
+    font-weight:bold;
+    margin-top:7px;
+}
+
+/* ================= IMAGE GALLERY ================= */
+
+.gallery-section{
+    background:#f4faf2;
+}
+
+.gallery-layout{
+    display:grid;
+    grid-template-columns:35% 65%;
+    gap:30px;
+    align-items:center;
+}
+
+.gallery-text h2{
+    font-size:45px;
+    color:#075b38;
+    line-height:1.1;
+    margin:5px 0 15px;
 }
 
 .gallery-text p{
-    margin-top:10px;
+    color:#385247;
+    margin-bottom:20px;
 }
 
-.main-photo{
-    height:330px;
-    border-radius:14px;
-    background:
-    url("https://images.unsplash.com/photo-1500076656116-558758c991c1?auto=format&fit=crop&w=1000&q=85");
-    background-size:cover;
-    background-position:center;
-}
-
-.small-photos{
+.gallery{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1.5fr 1fr 1fr;
+    grid-template-rows:175px 175px;
     gap:10px;
 }
 
-.small-photo{
-    height:155px;
-    border-radius:12px;
+.gallery-item{
+    border-radius:10px;
     background-size:cover;
     background-position:center;
 }
 
-.photo1{
-    background-image:url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=600&q=80");
+.gallery-main{
+    grid-row:1 / 3;
+    background-image:
+        url("https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1100&q=90");
 }
 
-.photo2{
-    background-image:url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=80");
+.gallery-tomato-1{
+    background-image:
+        url("https://images.unsplash.com/photo-1592841200221-a6898f307baa?auto=format&fit=crop&w=700&q=90");
 }
 
-.photo3{
-    background-image:url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80");
+.gallery-tomato-2{
+    background-image:
+        url("https://images.unsplash.com/photo-1598514982901-ae627e2a3c35?auto=format&fit=crop&w=700&q=90");
 }
 
-.photo4{
-    background-image:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80");
+.gallery-coffee{
+    background-image:
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=90");
 }
 
-/* ===== LIÊN HỆ ===== */
-
-.contact{
-    background:
-    linear-gradient(rgba(0,91,40,.94),rgba(0,91,40,.94)),
-    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    color:#fff;
-    padding:35px 6%;
+.gallery-farm{
+    background-image:
+        url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=700&q=90");
 }
 
-.contact-box{
-    max-width:1150px;
-    margin:auto;
+/* ================= CONTACT ================= */
+
+.contact-section{
+    background:#056b3b;
+    color:white;
+    padding:48px 0;
+}
+
+.contact-grid{
     display:grid;
-    grid-template-columns:35% 40% 25%;
+    grid-template-columns:1.2fr 1fr .7fr;
+    gap:35px;
     align-items:center;
-    gap:20px;
 }
 
-.contact h2{
-    font-size:25px;
-    margin-bottom:7px;
+.contact-title{
+    font-size:31px;
+    margin-bottom:8px;
 }
 
-.contact p{
-    font-size:14px;
+.contact-text{
+    opacity:.95;
 }
 
-.contact-info div{
-    margin:9px 0;
-}
-
-.contact-info strong{
-    color:#ffe000;
+.contact-info p{
+    margin:8px 0;
 }
 
 .contact-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.contact-buttons .btn{
+    border:none;
     text-align:center;
 }
 
-.contact-buttons a{
-    display:block;
-    margin:10px 0;
+.contact-buttons .btn-yellow{
+    background:#ffe000;
 }
 
-/* ===== FOOTER ===== */
-
-footer{
-    background:#004d27;
-    color:white;
-    padding:25px 6%;
+.contact-buttons .btn-white{
+    background:white;
 }
 
-.footer-box{
-    max-width:1150px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
+/* ================= FOOTER ================= */
+
+.footer{
+    background:#034d2d;
+    color:#fff;
+    padding:25px 0;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1fr 1.5fr 1fr;
     gap:25px;
     align-items:center;
 }
 
-.footer-logo{
-    font-size:23px;
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:25px;
     font-weight:bold;
 }
 
-.footer-company{
+.footer-logo{
+    width:52px;
+    height:52px;
+    border:2px solid white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.footer-title{
+    font-weight:bold;
+}
+
+.footer-slogan{
+    font-family:Georgia,serif;
+    font-style:italic;
     font-size:13px;
 }
 
 .footer-right{
     text-align:right;
-    font-size:12px;
+    font-size:13px;
 }
 
-/* ===== MOBILE ===== */
+/* ================= RESPONSIVE ================= */
 
-@media(max-width:850px){
+@media(max-width:950px){
 
-    .top{
+    .header-inner{
         flex-direction:column;
-        text-align:center;
+        align-items:flex-start;
     }
 
-    .contact-top{
+    .header-contact{
+        width:100%;
         flex-direction:column;
-        gap:5px;
+        gap:8px;
     }
 
-    .menu{
-        flex-wrap:wrap;
-    }
-
-    .menu a{
-        padding:10px 12px;
-        font-size:13px;
-    }
-
-    .hero{
-        min-height:500px;
-    }
-
-    .hero h2{
-        font-size:48px;
-    }
-
-    .about-box{
-        grid-template-columns:1fr;
-    }
-
-    .values{
+    .values-grid{
         grid-template-columns:1fr 1fr;
     }
 
-    .value{
+    .value:nth-child(2){
         border-right:none;
-        border-bottom:1px solid #a9c8ae;
     }
 
-    .gallery-box{
+    .about{
         grid-template-columns:1fr;
     }
 
-    .main-photo{
-        height:280px;
+    .gallery-layout{
+        grid-template-columns:1fr;
     }
 
-    .contact-box{
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
         grid-template-columns:1fr;
         text-align:center;
     }
 
-    .footer-box{
-        flex-direction:column;
-        text-align:center;
+    .footer-brand{
+        justify-content:center;
     }
 
     .footer-right{
@@ -489,34 +580,115 @@ footer{
     }
 }
 
-@media(max-width:500px){
+@media(max-width:650px){
 
-    .company-name h1{
-        font-size:19px;
+    .top-header{
+        padding:13px 0;
     }
 
-    .company-name h2{
-        font-size:29px;
+    .brand-name{
+        font-size:17px;
     }
 
-    .hero-small{
-        font-size:23px;
+    .brand-name strong{
+        font-size:28px;
     }
 
-    .hero h1{
-        font-size:23px;
+    .logo{
+        width:68px;
+        height:68px;
     }
 
-    .hero h2{
-        font-size:42px;
+    .slogan{
+        font-size:12px;
     }
 
-    .values{
-        grid-template-columns:1fr;
+    .nav-inner{
+        overflow-x:auto;
+        justify-content:flex-start;
+        white-space:nowrap;
+        padding:5px 0;
     }
 
-    .small-photos{
+    .nav-inner a{
+        padding:9px 17px;
+        font-size:14px;
+    }
+
+    .search-icon{
+        margin-left:5px;
+    }
+
+    .hero{
+        min-height:470px;
+    }
+
+    .hero-script{
+        font-size:30px;
+    }
+
+    .hero-company{
+        font-size:18px;
+    }
+
+    .hero-title{
+        font-size:48px;
+    }
+
+    .hero-description{
+        font-size:15px;
+    }
+
+    .values-grid{
         grid-template-columns:1fr 1fr;
+    }
+
+    .value{
+        padding:10px 8px;
+        border-right:1px solid #5bb58a;
+    }
+
+    .value:nth-child(2),
+    .value:nth-child(4){
+        border-right:none;
+    }
+
+    .value h3{
+        font-size:16px;
+    }
+
+    .value p{
+        font-size:12px;
+    }
+
+    .section{
+        padding:40px 0;
+    }
+
+    .about-image{
+        height:270px;
+    }
+
+    .about-content h2{
+        font-size:26px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:170px 170px 170px;
+    }
+
+    .gallery-main{
+        grid-column:1 / 3;
+        grid-row:auto;
+    }
+
+    .gallery-text h2{
+        font-size:35px;
+    }
+
+    .contact-title{
+        font-size:25px;
     }
 }
 </style>
@@ -524,97 +696,114 @@ footer{
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
-<header class="top">
+<header class="top-header">
+    <div class="container header-inner">
 
-    <div class="logo-area">
+        <div class="brand">
 
-        <div class="logo">
-            🌿
+            <div class="logo">
+                <div class="logo-leaf">🌿</div>
+                <div class="logo-text">GIA NÔNG</div>
+            </div>
+
+            <div>
+                <div class="brand-name">
+                    CÔNG TY TNHH XUẤT NHẬP KHẨU
+                    <strong>GIA NÔNG</strong>
+                </div>
+
+                <div class="slogan">
+                    Đồng hành cùng nhà nông – Kiến tạo mùa vàng
+                </div>
+            </div>
+
         </div>
 
-        <div class="company-name">
+        <div class="header-contact">
 
-            <h1>CÔNG TY TNHH XUẤT NHẬP KHẨU</h1>
+            <div class="header-contact-item">
+                <span class="header-icon">📞</span>
+                <div>
+                    <strong>0889.008.009</strong>
+                    Điện thoại
+                </div>
+            </div>
 
-            <h2>GIA NÔNG</h2>
+            <div class="header-contact-item">
+                <span class="header-icon">📍</span>
+                <div>
+                    <strong>163 Lạc Long Quân</strong>
+                    Đức Trọng, Lâm Đồng
+                </div>
+            </div>
 
-            <div class="slogan">
-                Đồng hành cùng nhà nông – Kiến tạo mùa vàng
+            <div class="header-contact-item">
+                <span class="header-icon">✉️</span>
+                <div>
+                    <strong>xnkbvtvgianong@gmail.com</strong>
+                    Email
+                </div>
             </div>
 
         </div>
 
     </div>
-
-    <div class="contact-top">
-
-        <div>
-            📞 <strong>0889.008.009</strong>
-        </div>
-
-        <div>
-            📍 <strong>163 Lạc Long Quân,<br>
-            Đức Trọng, Lâm Đồng</strong>
-        </div>
-
-        <div>
-            ✉️ <strong>xnkbvtvgianong@gmail.com</strong>
-        </div>
-
-    </div>
-
 </header>
 
 
-<!-- MENU -->
+<!-- ================= NAVIGATION ================= -->
 
-<nav class="menu">
+<nav class="navbar">
 
-    <a class="active" href="#trang-chu">Trang chủ</a>
+    <div class="container nav-inner">
 
-    <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#trangchu" class="active">TRANG CHỦ</a>
 
-    <a href="#hinh-anh">Hình ảnh</a>
+        <a href="#gioithieu">GIỚI THIỆU</a>
 
-    <a href="#lien-he">Liên hệ</a>
+        <a href="#hinhanh">HÌNH ẢNH</a>
+
+        <a href="#lienhe">LIÊN HỆ</a>
+
+        <span class="search-icon">⌕</span>
+
+    </div>
 
 </nav>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
-<section class="hero" id="trang-chu">
+<section class="hero" id="trangchu">
 
     <div class="hero-content">
 
-        <div class="hero-small">
+        <div class="hero-script">
             Kết nối nông nghiệp Việt
         </div>
 
-        <h1>
+        <div class="hero-company">
             CÔNG TY TNHH XUẤT NHẬP KHẨU
-        </h1>
+        </div>
 
-        <h2>
+        <div class="hero-title">
             GIA NÔNG
-        </h2>
+        </div>
 
-        <p>
+        <p class="hero-description">
             Chuyên cung cấp các giải pháp nông nghiệp
             chất lượng, hiệu quả, bền vững.
         </p>
 
         <div class="hero-buttons">
 
-            <a class="btn btn-yellow"
-               href="tel:0889008009">
+            <a href="tel:0889008009" class="btn btn-yellow">
                 📞 Gọi ngay 0889.008.009
             </a>
 
-            <a class="btn btn-white"
-               href="mailto:xnkbvtvgianong@gmail.com">
+            <a href="#lienhe" class="btn btn-white">
                 ✉️ Liên hệ ngay
             </a>
 
@@ -625,17 +814,83 @@ footer{
 </section>
 
 
-<!-- GIỚI THIỆU -->
+<!-- ================= VALUES ================= -->
 
-<section class="about" id="gioi-thieu">
+<section class="values">
 
-    <div class="about-box">
+    <div class="container values-grid">
 
-        <div class="about-img"></div>
+        <div class="value">
 
-        <div>
+            <div class="value-icon">🌿</div>
 
-            <div class="label">
+            <h3>CHẤT LƯỢNG</h3>
+
+            <p>
+                Sản phẩm chính hãng,
+                nguồn gốc rõ ràng
+            </p>
+
+        </div>
+
+
+        <div class="value">
+
+            <div class="value-icon">🤝</div>
+
+            <h3>UY TÍN</h3>
+
+            <p>
+                Cam kết đúng hàng,
+                đúng chất lượng
+            </p>
+
+        </div>
+
+
+        <div class="value">
+
+            <div class="value-icon">🚚</div>
+
+            <h3>NHANH CHÓNG</h3>
+
+            <p>
+                Giao hàng tận nơi,
+                đúng hẹn
+            </p>
+
+        </div>
+
+
+        <div class="value">
+
+            <div class="value-icon">🎧</div>
+
+            <h3>TẬN TÂM</h3>
+
+            <p>
+                Hỗ trợ kỹ thuật
+                và tư vấn miễn phí
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section" id="gioithieu">
+
+    <div class="container about">
+
+        <div class="about-image"></div>
+
+        <div class="about-content">
+
+            <div class="about-label">
                 VỀ CHÚNG TÔI
             </div>
 
@@ -645,20 +900,25 @@ footer{
 
             <p>
                 Gia Nông là đơn vị hoạt động trong lĩnh vực
-                xuất nhập khẩu và phân phối các sản phẩm phục
-                vụ sản xuất nông nghiệp.
+                xuất nhập khẩu và phân phối các sản phẩm
+                phục vụ sản xuất nông nghiệp.
             </p>
-
-            <br>
 
             <p>
-                Với phương châm “Đồng hành cùng nhà nông –
-                Kiến tạo mùa vàng”, chúng tôi luôn nỗ lực mang
-                đến những sản phẩm chất lượng, giải pháp hiệu
-                quả và dịch vụ tận tâm.
+                Với phương châm
+                <strong>“Đồng hành cùng nhà nông – Kiến tạo mùa vàng”</strong>,
+                chúng tôi hướng đến những sản phẩm chất lượng,
+                giải pháp hiệu quả và dịch vụ tận tâm.
             </p>
 
-            <a class="more" href="#lien-he">
+            <p>
+                Đặc biệt, Gia Nông luôn đồng hành cùng bà con
+                trong quá trình chăm sóc và phát triển
+                cây <strong>cà phê</strong>, <strong>cà chua</strong>
+                và các cây trồng nông nghiệp.
+            </p>
+
+            <a href="#hinhanh" class="green-button">
                 Tìm hiểu thêm →
             </a>
 
@@ -669,81 +929,17 @@ footer{
 </section>
 
 
-<!-- GIÁ TRỊ -->
+<!-- ================= GALLERY ================= -->
 
-<div class="values">
+<section class="section gallery-section" id="hinhanh">
 
-    <div class="value">
-
-        <div class="value-icon">🌿</div>
-
-        <h3>CHẤT LƯỢNG</h3>
-
-        <p>
-            Sản phẩm chính hãng,<br>
-            nguồn gốc rõ ràng
-        </p>
-
-    </div>
-
-
-    <div class="value">
-
-        <div class="value-icon">🤝</div>
-
-        <h3>UY TÍN</h3>
-
-        <p>
-            Cam kết đúng hàng,<br>
-            đúng chất lượng
-        </p>
-
-    </div>
-
-
-    <div class="value">
-
-        <div class="value-icon">🚚</div>
-
-        <h3>NHANH CHÓNG</h3>
-
-        <p>
-            Giao hàng tận nơi,<br>
-            đúng hẹn
-        </p>
-
-    </div>
-
-
-    <div class="value">
-
-        <div class="value-icon">🎧</div>
-
-        <h3>TẬN TÂM</h3>
-
-        <p>
-            Hỗ trợ kỹ thuật<br>
-            và tư vấn miễn phí
-        </p>
-
-    </div>
-
-</div>
-
-
-<!-- HÌNH ẢNH -->
-
-<section class="gallery" id="hinh-anh">
-
-    <div class="gallery-box">
+    <div class="container gallery-layout">
 
         <div class="gallery-text">
 
-            <h2>🌿</h2>
-
-            <h3>
-                HÌNH ẢNH HOẠT ĐỘNG
-            </h3>
+            <div class="about-label">
+                🌿 HÌNH ẢNH HOẠT ĐỘNG
+            </div>
 
             <h2>
                 GIA NÔNG
@@ -754,25 +950,24 @@ footer{
                 trên mọi miền đất nước.
             </p>
 
-            <a class="more" href="#lien-he">
-                Xem thêm ảnh →
+            <a href="#lienhe" class="green-button">
+                Liên hệ với chúng tôi →
             </a>
 
         </div>
 
 
-        <div class="main-photo"></div>
+        <div class="gallery">
 
+            <div class="gallery-item gallery-main"></div>
 
-        <div class="small-photos">
+            <div class="gallery-item gallery-tomato-1"></div>
 
-            <div class="small-photo photo1"></div>
+            <div class="gallery-item gallery-tomato-2"></div>
 
-            <div class="small-photo photo2"></div>
+            <div class="gallery-item gallery-coffee"></div>
 
-            <div class="small-photo photo3"></div>
-
-            <div class="small-photo photo4"></div>
+            <div class="gallery-item gallery-farm"></div>
 
         </div>
 
@@ -781,19 +976,19 @@ footer{
 </section>
 
 
-<!-- LIÊN HỆ -->
+<!-- ================= CONTACT ================= -->
 
-<section class="contact" id="lien-he">
+<section class="contact-section" id="lienhe">
 
-    <div class="contact-box">
+    <div class="container contact-grid">
 
         <div>
 
-            <h2>
-                ✈️ LIÊN HỆ VỚI CHÚNG TÔI
+            <h2 class="contact-title">
+                ✈ LIÊN HỆ VỚI CHÚNG TÔI
             </h2>
 
-            <p>
+            <p class="contact-text">
                 Mọi thắc mắc xin vui lòng liên hệ qua
                 số điện thoại, địa chỉ hoặc email bên dưới.
             </p>
@@ -803,34 +998,26 @@ footer{
 
         <div class="contact-info">
 
-            <div>
-                📞 <strong>0889.008.009</strong>
-            </div>
+            <p>📞 <strong>0889.008.009</strong></p>
 
-            <div>
-                📍 163 Lạc Long Quân, Đức Trọng, Lâm Đồng
-            </div>
+            <p>📍 163 Lạc Long Quân, Đức Trọng, Lâm Đồng</p>
 
-            <div>
-                ✉️ xnkbvtvgianong@gmail.com
-            </div>
+            <p>✉️ xnkbvtvgianong@gmail.com</p>
 
-            <div>
-                📋 MST: 580158159
-            </div>
+            <p>📄 MST: 580158159</p>
 
         </div>
 
 
         <div class="contact-buttons">
 
-            <a class="btn btn-yellow"
-               href="tel:0889008009">
+            <a href="tel:0889008009"
+               class="btn btn-yellow">
                 📞 Gọi ngay
             </a>
 
-            <a class="btn btn-white"
-               href="mailto:xnkbvtvgianong@gmail.com">
+            <a href="mailto:xnkbvtvgianong@gmail.com"
+               class="btn btn-white">
                 ✉️ Liên hệ
             </a>
 
@@ -841,46 +1028,61 @@ footer{
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
 
-<footer>
+<footer class="footer">
 
-    <div class="footer-box">
+    <div class="container footer-grid">
 
-        <div class="footer-logo">
-            🌿 GIA NÔNG
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                🌿
+            </div>
+
+            <div>
+                GIA NÔNG
+            </div>
+
         </div>
 
-        <div class="footer-company">
 
-            <strong>
+        <div>
+
+            <div class="footer-title">
                 CÔNG TY TNHH XUẤT NHẬP KHẨU GIA NÔNG
-            </strong>
+            </div>
 
-            <br>
+            <div class="footer-slogan">
+                Đồng hành cùng nhà nông – Kiến tạo mùa vàng
+            </div>
 
-            Đồng hành cùng nhà nông – Kiến tạo mùa vàng
-
-            <br>
-
-            MST: 580158159
+            <div>
+                MST: 580158159
+            </div>
 
         </div>
+
 
         <div class="footer-right">
 
-            © 2026 Công ty TNHH Xuất Nhập Khẩu Gia Nông.
-            All rights reserved.
+            <div>
+                © 2026 Công ty TNHH Xuất Nhập Khẩu Gia Nông.
+            </div>
 
-            <br><br>
-
-            Trang chủ　|　Giới thiệu　|　Hình ảnh　|　Liên hệ
+            <div>
+                Trang chủ &nbsp; | &nbsp;
+                Giới thiệu &nbsp; | &nbsp;
+                Hình ảnh &nbsp; | &nbsp;
+                Liên hệ
+            </div>
 
         </div>
 
     </div>
 
 </footer>
+
 
 </body>
 </html>
