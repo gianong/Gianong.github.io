@@ -1,78 +1,610 @@
-￼
-☎
-0889.008.009
-Điện thoại
-⌖
-163 Lạc Long Quân,
-Đức Trọng, Lâm Đồng
-✉
-xnkbvtvgianong@gmail.com
-Email
-	•	TRANG CHỦ
-	•	GIỚI THIỆU
-	•	HÌNH ẢNH
-	•	LIÊN HỆ
-⌕
-￼
-￼
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GIA NÔNG - Thịnh vượng cùng Nhà Nông</title>
 
-Kết nối nông nghiệp Việt
-CÔNG TY TNHH XUẤT NHẬP KHẨU
-GIA NÔNG
-Chuyên cung cấp các giải pháp nông nghiệp chất lượng, hiệu quả, bền vững.
-☎ Gọi ngay 0889.008.009
-✉ Liên hệ ngay
-◒
-CHẤT LƯỢNG
-Sản phẩm chính hãng, nguồn gốc rõ ràng
-🤝
-UY TÍN
-Cam kết đúng hàng, đúng chất lượng
-▣
-NHANH CHÓNG
-Giao hàng tận nơi, đúng hẹn
-◉
-TẬN TÂM
-Hỗ trợ kỹ thuật và tư vấn miễn phí
-￼
-CÂY CÀ PHÊ
-Vườn cà phê xanh tốt, nhiều trái
-￼
-CÂY CÀ CHUA
-THÊM MÀU ĐỎ
-Hình ảnh cây trồng thực tế của Gia Nông
-￼
-VƯỜN CÀ CHUA
-Đồng hành cùng nhà nông
-￼
-VỀ CHÚNG TÔI
-CÔNG TY TNHH XUẤT NHẬP KHẨU GIA NÔNG
-Gia Nông là đơn vị hoạt động trong lĩnh vực xuất nhập khẩu và phân phối các sản phẩm phục vụ sản xuất nông nghiệp.
-Với phương châm “Đồng hành cùng nhà nông – Kiến tạo mùa vàng”, chúng tôi luôn nỗ lực mang đến sản phẩm chất lượng, giải pháp hiệu quả và dịch vụ tận tâm.
-Tìm hiểu thêm →
-🍃 HÌNH ẢNH HOẠT ĐỘNG
-GIA NÔNG
-Luôn đồng hành cùng bà con nông dân trên mọi miền đất nước.
-☕ CÀ PHÊ    •    🍅 CÀ CHUA
-Xem thêm ảnh →
-￼
-￼
-￼
-￼
-￼
-➤ LIÊN HỆ VỚI CHÚNG TÔI
-Mọi thắc mắc xin vui lòng liên hệ qua số điện thoại, địa chỉ hoặc email bên dưới.
-☎0889.008.009
-⌖163 Lạc Long Quân, Đức Trọng, Lâm Đồng
-✉xnkbvtvgianong@gmail.com
-▣MST: 580158159
-☎ Gọi ngay
-✉ Liên hệ
-￼
-CÔNG TY TNHH XUẤT NHẬP KHẨU GIA NÔNG
-Đồng hành cùng nhà nông – Kiến tạo mùa vàng
-MST: 580158159
-© 2026 Công ty TNHH Xuất Nhập Khẩu Gia Nông.
-All rights reserved.
-Trang chủ　|　Giới thiệu　|　Hình ảnh　|　Liên hệ
-Website Gia Nông
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#173b24;
+  background:#fff;
+  line-height:1.6
+}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:auto;padding:0 20px}
+
+/* HEADER */
+.header{
+  background:#fff;
+  box-shadow:0 2px 15px #0001;
+  position:sticky;
+  top:0;
+  z-index:100
+}
+.head{
+  min-height:92px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px
+}
+.logo-icon{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#087a38,#c8a63a);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:27px;
+  font-weight:bold
+}
+.logo-text strong{
+  display:block;
+  color:#08743a;
+  font-size:25px;
+  letter-spacing:1px
+}
+.logo-text span{
+  color:#b18b25;
+  font-size:13px
+}
+.info{
+  display:flex;
+  gap:25px;
+  align-items:center;
+  font-size:14px
+}
+.info b{color:#08743a}
+
+.nav{
+  background:#08743a;
+  color:white
+}
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:42px;
+  min-height:48px
+}
+.nav a{
+  font-weight:bold;
+  font-size:14px;
+  transition:.25s
+}
+.nav a:hover{color:#f5d36a}
+
+/* HERO */
+.hero{
+  min-height:610px;
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(90deg,#063b22dd,#063b2280,#063b2222),
+    url("https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1800&q=85")
+    center/cover
+}
+.hero-content{
+  min-height:610px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  position:relative;
+  z-index:2
+}
+.hero-box{
+  max-width:850px;
+  padding:45px 30px
+}
+.hero small{
+  color:#f5d36a;
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:2px
+}
+.hero h1{
+  font-size:62px;
+  line-height:1.05;
+  margin:10px 0;
+  color:white;
+  text-shadow:0 3px 12px #0008
+}
+.hero h2{
+  font-size:27px;
+  letter-spacing:3px;
+  margin-bottom:15px
+}
+.hero p{
+  max-width:680px;
+  margin:0 auto 28px;
+  font-size:18px
+}
+.buttons{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  flex-wrap:wrap
+}
+.btn{
+  display:inline-block;
+  padding:13px 25px;
+  border-radius:30px;
+  font-weight:bold;
+  transition:.25s
+}
+.btn-main{
+  background:#f1c643;
+  color:#173b24
+}
+.btn-main:hover{transform:translateY(-3px)}
+.btn-white{
+  border:2px solid white;
+  color:white
+}
+.btn-white:hover{background:white;color:#08743a}
+
+/* VALUE */
+.values{
+  margin-top:-55px;
+  position:relative;
+  z-index:5
+}
+.value-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px
+}
+.value{
+  background:white;
+  border-radius:15px;
+  padding:25px 15px;
+  text-align:center;
+  box-shadow:0 8px 30px #0002;
+  border-bottom:4px solid #08743a
+}
+.value .icon{
+  font-size:30px;
+  margin-bottom:5px
+}
+.value h3{font-size:16px;color:#08743a}
+.value p{font-size:13px;color:#777}
+
+/* SECTION */
+section{padding:75px 0}
+.title{text-align:center;margin-bottom:40px}
+.title small{
+  color:#b18b25;
+  font-weight:bold;
+  letter-spacing:2px
+}
+.title h2{
+  color:#08743a;
+  font-size:34px;
+  margin-top:5px
+}
+.title p{
+  color:#777;
+  max-width:650px;
+  margin:8px auto
+}
+
+/* ABOUT */
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center
+}
+.about-img{
+  min-height:430px;
+  border-radius:22px;
+  background:
+    linear-gradient(#063b2233,#063b2233),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85")
+    center/cover;
+  box-shadow:0 15px 35px #0002
+}
+.about h2{
+  color:#08743a;
+  font-size:36px;
+  margin-bottom:15px
+}
+.about p{color:#666;margin-bottom:15px}
+.check{
+  display:flex;
+  gap:10px;
+  margin:10px 0;
+  font-weight:bold
+}
+.check b{color:#08743a}
+
+/* CROPS */
+.crops{background:#f5f8f3}
+.crop-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px
+}
+.crop{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 5px 20px #0001;
+  transition:.3s
+}
+.crop:hover{
+  transform:translateY(-7px);
+  box-shadow:0 15px 30px #0002
+}
+.crop-img{
+  height:230px;
+  position:relative;
+  background-size:cover;
+  background-position:center
+}
+.coffee{
+  background-image:
+  linear-gradient(#0001,#0001),
+  url("https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=85")
+}
+.tomato{
+  background-image:
+  linear-gradient(#0001,#0001),
+  url("https://images.unsplash.com/photo-1546470427-e26264be0b0d?auto=format&fit=crop&w=800&q=85")
+}
+.vegetable{
+  background-image:
+  linear-gradient(#0001,#0001),
+  url("https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=800&q=85")
+}
+.farm{
+  background-image:
+  linear-gradient(#0001,#0001),
+  url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=85")
+}
+.crop-text{padding:18px}
+.crop-text h3{color:#08743a;margin-bottom:4px}
+.crop-text p{color:#777;font-size:14px}
+
+/* CONTACT */
+.contact{
+  background:#08743a;
+  color:white
+}
+.contact-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px
+}
+.contact h2{font-size:30px}
+.contact p{opacity:.9}
+
+/* FOOTER */
+footer{
+  background:#103521;
+  color:white;
+  padding:45px 0 20px
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr;
+  gap:45px
+}
+footer h3{
+  color:#f1c643;
+  margin-bottom:12px
+}
+footer p,footer li{
+  color:#cbd8cf;
+  font-size:14px;
+  margin:6px 0
+}
+footer ul{list-style:none}
+.copy{
+  border-top:1px solid #ffffff22;
+  margin-top:30px;
+  padding-top:18px;
+  text-align:center;
+  color:#9eafa4;
+  font-size:13px
+}
+
+/* MOBILE */
+@media(max-width:850px){
+  .info{display:none}
+  .nav-inner{gap:15px;overflow:auto;justify-content:flex-start}
+  .nav a{white-space:nowrap}
+  .hero h1{font-size:43px}
+  .hero h2{font-size:20px}
+  .hero p{font-size:15px}
+  .value-grid{grid-template-columns:repeat(2,1fr)}
+  .about{grid-template-columns:1fr}
+  .about-img{min-height:300px}
+  .crop-grid{grid-template-columns:repeat(2,1fr)}
+  .contact-inner{flex-direction:column;text-align:center}
+  .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:500px){
+  .head{min-height:75px}
+  .logo-icon{width:50px;height:50px;font-size:21px}
+  .logo-text strong{font-size:20px}
+  .logo-text span{font-size:11px}
+  .hero,.hero-content{min-height:540px}
+  .hero h1{font-size:36px}
+  .hero small{font-size:14px}
+  .value-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .value{padding:18px 8px}
+  .crop-grid{grid-template-columns:1fr}
+  section{padding:55px 0}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container head">
+
+    <a href="#home" class="logo">
+      <div class="logo-icon">GN</div>
+      <div class="logo-text">
+        <strong>GIA NÔNG</strong>
+        <span>Thịnh vượng cùng Nhà Nông</span>
+      </div>
+    </a>
+
+    <div class="info">
+      <div>☎ <b>0889.008.009</b></div>
+      <div>📍 163 Lạc Long Quân, Đức Trọng, Lâm Đồng</div>
+    </div>
+
+  </div>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home">TRANG CHỦ</a>
+      <a href="#about">GIỚI THIỆU</a>
+      <a href="#crops">HÌNH ẢNH</a>
+      <a href="#contact">LIÊN HỆ</a>
+    </div>
+  </nav>
+</header>
+
+<!-- TRANG CHỦ -->
+<main id="home">
+
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-box">
+
+      <small>KẾT NỐI NÔNG NGHIỆP VIỆT</small>
+
+      <h2>CÔNG TY TNHH XUẤT NHẬP KHẨU</h2>
+
+      <h1>GIA NÔNG</h1>
+
+      <p>
+        Chuyên cung cấp các giải pháp nông nghiệp
+        chất lượng, hiệu quả và bền vững,
+        đồng hành cùng nhà nông.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-main" href="tel:0889008009">
+          ☎ GỌI NGAY 0889.008.009
+        </a>
+        <a class="btn btn-white" href="#contact">
+          LIÊN HỆ NGAY
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GIÁ TRỊ -->
+<div class="container values">
+  <div class="value-grid">
+
+    <div class="value">
+      <div class="icon">🌱</div>
+      <h3>CHẤT LƯỢNG</h3>
+      <p>Sản phẩm được chọn lọc</p>
+    </div>
+
+    <div class="value">
+      <div class="icon">🤝</div>
+      <h3>UY TÍN</h3>
+      <p>Đồng hành lâu dài</p>
+    </div>
+
+    <div class="value">
+      <div class="icon">⚡</div>
+      <h3>NHANH CHÓNG</h3>
+      <p>Phục vụ kịp thời</p>
+    </div>
+
+    <div class="value">
+      <div class="icon">❤️</div>
+      <h3>TẬN TÂM</h3>
+      <p>Đặt lợi ích nhà nông</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- GIỚI THIỆU -->
+<section id="about">
+  <div class="container">
+
+    <div class="title">
+      <small>VỀ GIA NÔNG</small>
+      <h2>Đồng hành cùng nhà nông</h2>
+      <p>
+        Gia Nông hướng đến những giải pháp nông nghiệp
+        hiệu quả, chất lượng và bền vững.
+      </p>
+    </div>
+
+    <div class="about">
+
+      <div class="about-img"></div>
+
+      <div>
+        <h2>GIA NÔNG</h2>
+
+        <p>
+          CÔNG TY TNHH XUẤT NHẬP KHẨU GIA NÔNG
+          chuyên cung cấp các sản phẩm và giải pháp
+          phục vụ sản xuất nông nghiệp.
+        </p>
+
+        <p>
+          Chúng tôi luôn hướng đến chất lượng sản phẩm,
+          dịch vụ tận tâm và đồng hành cùng người nông dân
+          trong quá trình canh tác.
+        </p>
+
+        <div class="check">
+          <b>✓</b> Sản phẩm chất lượng
+        </div>
+
+        <div class="check">
+          <b>✓</b> Tư vấn tận tâm
+        </div>
+
+        <div class="check">
+          <b>✓</b> Đồng hành cùng nhà nông
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CÂY TRỒNG -->
+<section id="crops" class="crops">
+  <div class="container">
+
+    <div class="title">
+      <small>HÌNH ẢNH</small>
+      <h2>CÂY TRỒNG CHỦ LỰC</h2>
+      <p>
+        Những hình ảnh gần gũi với sản xuất nông nghiệp
+        và vùng nguyên liệu.
+      </p>
+    </div>
+
+    <div class="crop-grid">
+
+      <div class="crop">
+        <div class="crop-img coffee"></div>
+        <div class="crop-text">
+          <h3>☕ Cây cà phê</h3>
+          <p>Quả cà phê xanh và đang chín trên cây.</p>
+        </div>
+      </div>
+
+      <div class="crop">
+        <div class="crop-img tomato"></div>
+        <div class="crop-text">
+          <h3>🍅 Cây cà chua</h3>
+          <p>Cà chua xanh, vàng và đang chuyển màu chín.</p>
+        </div>
+      </div>
+
+      <div class="crop">
+        <div class="crop-img vegetable"></div>
+        <div class="crop-text">
+          <h3>🌿 Rau màu</h3>
+          <p>Các loại cây trồng phục vụ sản xuất.</p>
+        </div>
+      </div>
+
+      <div class="crop">
+        <div class="crop-img farm"></div>
+        <div class="crop-text">
+          <h3>🌾 Nông nghiệp</h3>
+          <p>Đồng hành cùng vùng sản xuất nông nghiệp.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIÊN HỆ -->
+<section id="contact" class="contact">
+  <div class="container contact-inner">
+
+    <div>
+      <h2>Cần tư vấn sản phẩm?</h2>
+      <p>Hãy liên hệ với Gia Nông để được hỗ trợ.</p>
+    </div>
+
+    <a class="btn btn-main" href="tel:0889008009">
+      ☎ 0889.008.009
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>GIA NÔNG</h3>
+        <p>Thịnh vượng cùng Nhà Nông</p>
+        <p>
+          CÔNG TY TNHH XUẤT NHẬP KHẨU GIA NÔNG
+        </p>
+      </div>
+
+      <div>
+        <h3>THÔNG TIN</h3>
+        <ul>
+          <li>Trang chủ</li>
+          <li>Giới thiệu</li>
+          <li>Hình ảnh</li>
+          <li>Liên hệ</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>LIÊN HỆ</h3>
+        <p>☎ 0889.008.009</p>
+        <p>✉ xnkbvtvgianong@gmail.com</p>
+        <p>📍 163 Lạc Long Quân, Đức Trọng, Lâm Đồng</p>
+      </div>
+
+    </div>
+
+    <div class="copy">
+      © 2026 GIA NÔNG. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
