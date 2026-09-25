@@ -1,513 +1,78 @@
-
-/* --- CÀI ĐẶT CHUNG (RESET) --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-:root {
-    --primary-color: #005a36;   /* Xanh lá đậm chủ đạo */
-    --accent-color: #ffcc00;    /* Vàng cam nút bấm */
-    --text-dark: #333333;       /* Màu chữ tối */
-    --text-light: #666666;      /* Màu chữ phụ */
-    --bg-light: #f4f9f6;        /* Nền xanh nhẹ */
-}
-
-body {
-    background-color: #ffffff;
-    color: var(--text-dark);
-    line-height: 1.6;
-}
-
-.container {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* --- BUTTONS --- */
-.btn {
-    padding: 10px 24px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-}
-
-.btn-yellow {
-    background-color: var(--accent-color);
-    color: #000;
-}
-
-.btn-yellow:hover {
-    background-color: #e6b800;
-}
-
-.btn-outline {
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    background: transparent;
-}
-
-.btn-outline:hover {
-    background: #ffffff;
-    color: var(--primary-color);
-}
-
-.btn-outline-white {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    background: transparent;
-}
-
-/* --- TOP HEADER --- */
-.top-header {
-    padding: 15px 0;
-    background: #ffffff;
-}
-
-.header-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo-icon {
-    background: var(--primary-color);
-    color: var(--accent-color);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-}
-
-.logo-text h1, .logo-text h2 {
-    color: #cc0000;
-    font-size: 26px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    line-height: 1.1;
-}
-
-.logo-text p {
-    color: var(--primary-color);
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.contact-meta {
-    display: flex;
-    gap: 30px;
-}
-
-.meta-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.meta-item i {
-    color: var(--primary-color);
-    font-size: 20px;
-}
-
-.meta-item strong {
-    display: block;
-    font-size: 14px;
-    color: var(--primary-color);
-}
-
-.meta-item span {
-    font-size: 12px;
-    color: var(--text-light);
-}
-
-/* --- NAVIGATION BAR --- */
-.main-nav {
-    background-color: var(--primary-color);
-}
-
-.nav-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links a {
-    display: block;
-    padding: 15px 25px;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    transition: background 0.3s;
-}
-
-.nav-links a:hover, .nav-links a.active {
-    background-color: #004225;
-}
-
-.search-box {
-    color: #ffffff;
-    cursor: pointer;
-    padding: 15px;
-    font-size: 16px;
-}
-
-/* --- HERO BANNER --- */
-.hero-banner {
-    position: relative;
-    background-image: url('https://unsplash.com'); /* Thay bằng ảnh quả cà chua / cà phê thích hợp */
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-    color: #ffffff;
-    text-align: center;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0, 58, 54, 0.4); /* Phủ lớp xanh mờ */
-    z-index: 1;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-content h3 {
-    font-size: 28px;
-    font-style: italic;
-    font-weight: 400;
-    margin-bottom: 5px;
-}
-
-.hero-content h2 {
-    font-size: 24px;
-    letter-spacing: 2px;
-}
-
-.hero-content h1 {
-    font-size: 64px;
-    font-weight: 900;
-    color: #ffffff;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hero-sub {
-    font-size: 18px;
-    margin-bottom: 30px;
-    font-weight: 300;
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-/* --- CORE VALUES --- */
-.core-values {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px 0;
-    background: #ffffff;
-}
-
-.value-card {
-    text-align: center;
-    padding: 20px;
-    border-right: 1px solid #e0e0e0;
-}
-
-.value-card:last-child {
-    border-right: none;
-}
-
-.value-icon {
-    font-size: 36px;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.value-card h4 {
-    color: var(--primary-color);
-    font-size: 16px;
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-}
-
-.value-card p {
-    font-size: 13px;
-    color: var(--text-light);
-}
-
-/* --- ABOUT US --- */
-.about-us {
-    display: flex;
-    gap: 50px;
-    padding: 60px 0;
-    align-items: center;
-}
-
-.about-image {
-    flex: 1;
-    height: 350px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.about-info {
-    flex: 1;
-}
-
-.section-tag {
-    color: var(--primary-color);
-    font-weight: bold;
-    font-size: 14px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.about-info h3 {
-    font-size: 18px;
-    color: var(--text-light);
-    font-weight: 400;
-}
-
-.about-info h2 {
-    font-size: 32px;
-    color: var(--primary-color);
-    font-weight: 800;
-    margin-bottom: 20px;
-}
-
-.about-info p {
-    margin-bottom: 15px;
-    color: #444;
-}
-
-.btn-more {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--primary-color);
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-/* --- GALLERY SECTION --- */
-.gallery-section {
-    display: flex;
-    gap: 40px;
-    padding: 60px 0;
-    background: var(--bg-light);
-    border-radius: 12px;
-    margin-bottom: 60px;
-    padding: 40px;
-}
-
-.gallery-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.gallery-left h2 {
-    font-size: 36px;
-    color: var(--primary-color);
-    margin-bottom: 15px;
-}
-
-.gallery-left p {
-    color: var(--text-light);
-    margin-bottom: 25px;
-}
-
-.btn-more-img {
-    background: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    align-self: flex-start;
-    font-weight: bold;
-}
-
-.gallery-right {
-    flex: 2;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 120px);
-    gap: 15px;
-}
-
-.grid-large {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.grid-small {
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-/* --- FOOTER CONTACT BAR --- */
-.footer-contact-bar {
-    background-color: var(--primary-color);
-    color: #ffffff;
-    padding: 30px 0;
-}
-
-.footer-bar-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.f-contact-info h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.f-contact-info p {
-    font-size: 13px;
-    opacity: 0.8;
-}
-
-.f-contact-details {
-    font-size: 13px;
-}
-
-.f-contact-details p {
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.f-contact-actions {
-    display: flex;
-    gap: 10px;
-}
-
-/* --- MAIN FOOTER --- */
-.main-footer {
-    background-color: #004225;
-    color: #ffffff;
-    padding: 40px 0;
-    font-size: 13px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.footer-main-layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.footer-brand .logo-text h2 {
-    color: #ffffff;
-}
-
-.footer-brand .logo-text p {
-    color: var(--accent-color);
-}
-
-.footer-company-info strong {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.footer-copyright {
-    text-align: right;
-}
-
-.footer-links {
-    margin-top: 10px;
-}
-
-.footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer-links a:hover {
-    color: var(--accent-color);
-}
-
-/* --- RESPONSIVE TRÊN DI ĐỘNG --- */
-@media (max-width: 768px) {
-    .header-layout, .nav-layout, .core-values, .about-us, .gallery-section, .footer-bar-layout, .footer-main-layout {
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .contact-meta, .hero-buttons, .f-contact-actions {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .value-card {
-        border-right: none;
-        border-bottom: 1px solid #e0e0e0;
-    }
-    .gallery-right {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-    .grid-large {
-        grid-column: unset;
-        grid-row: unset;
-        height: 200px;
-    }
-    .grid-small {
-        height: 150px;
-    }
-    .footer-copyright {
-        text-align: center;
-        margin-top: 20px;
-    }
-}
+￼
+☎
+0889.008.009
+Điện thoại
+⌖
+163 Lạc Long Quân,
+Đức Trọng, Lâm Đồng
+✉
+xnkbvtvgianong@gmail.com
+Email
+	•	TRANG CHỦ
+	•	GIỚI THIỆU
+	•	HÌNH ẢNH
+	•	LIÊN HỆ
+⌕
+￼
+￼
+
+Kết nối nông nghiệp Việt
+CÔNG TY TNHH XUẤT NHẬP KHẨU
+GIA NÔNG
+Chuyên cung cấp các giải pháp nông nghiệp chất lượng, hiệu quả, bền vững.
+☎ Gọi ngay 0889.008.009
+✉ Liên hệ ngay
+◒
+CHẤT LƯỢNG
+Sản phẩm chính hãng, nguồn gốc rõ ràng
+🤝
+UY TÍN
+Cam kết đúng hàng, đúng chất lượng
+▣
+NHANH CHÓNG
+Giao hàng tận nơi, đúng hẹn
+◉
+TẬN TÂM
+Hỗ trợ kỹ thuật và tư vấn miễn phí
+￼
+CÂY CÀ PHÊ
+Vườn cà phê xanh tốt, nhiều trái
+￼
+CÂY CÀ CHUA
+THÊM MÀU ĐỎ
+Hình ảnh cây trồng thực tế của Gia Nông
+￼
+VƯỜN CÀ CHUA
+Đồng hành cùng nhà nông
+￼
+VỀ CHÚNG TÔI
+CÔNG TY TNHH XUẤT NHẬP KHẨU GIA NÔNG
+Gia Nông là đơn vị hoạt động trong lĩnh vực xuất nhập khẩu và phân phối các sản phẩm phục vụ sản xuất nông nghiệp.
+Với phương châm “Đồng hành cùng nhà nông – Kiến tạo mùa vàng”, chúng tôi luôn nỗ lực mang đến sản phẩm chất lượng, giải pháp hiệu quả và dịch vụ tận tâm.
+Tìm hiểu thêm →
+🍃 HÌNH ẢNH HOẠT ĐỘNG
+GIA NÔNG
+Luôn đồng hành cùng bà con nông dân trên mọi miền đất nước.
+☕ CÀ PHÊ    •    🍅 CÀ CHUA
+Xem thêm ảnh →
+￼
+￼
+￼
+￼
+￼
+➤ LIÊN HỆ VỚI CHÚNG TÔI
+Mọi thắc mắc xin vui lòng liên hệ qua số điện thoại, địa chỉ hoặc email bên dưới.
+☎0889.008.009
+⌖163 Lạc Long Quân, Đức Trọng, Lâm Đồng
+✉xnkbvtvgianong@gmail.com
+▣MST: 580158159
+☎ Gọi ngay
+✉ Liên hệ
+￼
+CÔNG TY TNHH XUẤT NHẬP KHẨU GIA NÔNG
+Đồng hành cùng nhà nông – Kiến tạo mùa vàng
+MST: 580158159
+© 2026 Công ty TNHH Xuất Nhập Khẩu Gia Nông.
+All rights reserved.
+Trang chủ　|　Giới thiệu　|　Hình ảnh　|　Liên hệ
+Website Gia Nông
